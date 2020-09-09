@@ -188,7 +188,7 @@ header {
 
 .button {
   position: relative;
-  background: url("DATALAB/background.png");
+  background: url("DATALAB/background.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
