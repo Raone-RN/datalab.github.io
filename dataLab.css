@@ -81,38 +81,92 @@ header {
 }
 
 .sentence {
-  background-image: url("DATALAB/first-11.png");
-  height: 150px;
-  width: 700px;
-  background-size: contain;
-  background-repeat: no-repeat;
   margin-top: 100px;
+  font-family: "Daehan";
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+  text-align: center;
+  min-width: 975px;
 }
 
-.image {
-  position: relative;
+.sentence:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sentence:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 20rem;
+  border-top: 2px solid #63b79f;
+  margin-bottom: 1.8rem;
+}
+
+.highlight {
+  background-image: linear-gradient(transparent 50%, #fcff85 50%);
+  font-family: "Daehan";
+}
+
+.fairy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2.7rem;
+}
+
+.fairy:last-child {
+  margin-right: 0;
+}
+
+.fairy-image {
+  background-image: url("DATALAB/fairy-spritesheet.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 270px;
-  min-width: 210px;
+  display: block;
+  margin-bottom: 5rem;
 }
 
-.main1 {
-  background-image: url("DATALAB/first-1.png");
+.fairy-fairy1 {
+  width: 211px;
+  height: 185px;
+  background-position: -5px -5px;
 }
 
-.main2 {
-  background-image: url("DATALAB/first-2.png");
-}
-.main3 {
-  background-image: url("DATALAB/first-3.png");
+.fairy-fairy2 {
+  width: 211px;
+  height: 185px;
+  background-position: -5px -200px;
 }
 
-.main4 {
-  background-image: url("DATALAB/first-22.png");
-  height: 100px;
-  width: 600px;
-  margin-top: 100px;
+.fairy-fairy3 {
+  width: 211px;
+  height: 189px;
+  background-position: -5px -395px;
+}
+
+.fairy-fairy4 {
+  width: 211px;
+  height: 186px;
+  background-position: -5px -594px;
+}
+
+.fairy-text {
+  font-family: "Daehan";
+  font-size: 1.5rem;
+  width: 250px;
+  text-align: center;
+  word-break: keep-all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fairy-text::before {
+  content: "";
+  display: block;
+  width: 10rem;
+  border-top: 1.5px solid #63b79f;
+  margin-bottom: 1.5rem;
 }
 
 .main5 {
@@ -147,31 +201,36 @@ header {
   width: 700px;
 }
 
-.second-chart {
+.charts {
   display: flex;
   width: 70vw;
   justify-content: space-around;
   margin-top: 250px;
 }
 
-.second-chart-image {
-  list-style: none;
+.chart {
+  background-image: url("DATALAB/chart-spritesheet.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 270px;
-  min-width: 210px;
+  display: block;
+  list-style: none;
 }
 
-.second-chart1 {
-  background-image: url("DATALAB/chart1.png");
+.chart-chart1 {
+  width: 211px;
+  height: 271px;
+  background-position: -5px -5px;
 }
 
-.second-chart2 {
-  background-image: url("DATALAB/chart2.png");
+.chart-chart2 {
+  width: 211px;
+  height: 271px;
+  background-position: -5px -286px;
 }
 
-.second-chart3 {
-  background-image: url("DATALAB/chart3.png");
+.chart-chart3 {
+  width: 211px;
+  height: 271px;
+  background-position: -5px -567px;
 }
 
 .side-image {
@@ -213,6 +272,7 @@ header {
 
 .eco-kit {
   font-family: "GmarketSansLight";
+  font-size: 1.2rem;
 }
 .side-image1 {
   background-image: url(DATALAB/thrid-1.png);
@@ -233,12 +293,16 @@ header {
   width: 250px;
   position: absolute;
   left: 7vw;
-  bottom: 1vw;
+  bottom: 0.1vw;
+}
+
+.form {
+  position: relative;
 }
 
 .form > #stb_subscribe {
   background-color: rgb(198, 219, 210);
-  height: 600px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,6 +327,11 @@ header {
   width: 400px;
   z-index: 4;
 }
+
+.stb_form_title {
+  font-family: "GmarketSansBold";
+}
+
 #stb_subscribe .stb-title {
   font-family: "Daehan";
   font-style: normal;
@@ -331,18 +400,7 @@ header {
   margin-top: 250px;
 }
 
-.trash-photo-image {
-  width: 230px;
-  height: 230px;
-  border-radius: 10px;
-  position: relative;
-  background-size: contain;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-
-.trash-photo-image:hover > .blind {
+.trash:hover > .blind {
   position: relative;
   width: inherit;
   height: inherit;
@@ -356,25 +414,51 @@ header {
   justify-content: center;
 }
 
-.trash1 {
-  background-image: url("DATALAB/photo1.png");
+.trash {
+  background-image: url("DATALAB/trash-spritesheet.png");
+  background-repeat: no-repeat;
+  display: block;
+  border-radius: 10px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
-.trash2 {
-  background-image: url("DATALAB/photo2.png");
+.trash-trash1 {
+  width: 231px;
+  height: 231px;
+  background-position: -5px -5px;
 }
 
-.trash3 {
-  background-image: url("DATALAB/photo3.png");
+.trash-trash2 {
+  width: 231px;
+  height: 231px;
+  background-position: -5px -246px;
 }
-.trash4 {
-  background-image: url("DATALAB/photo4.png");
+
+.trash-trash3 {
+  width: 231px;
+  height: 231px;
+  background-position: -5px -487px;
 }
-.trash5 {
-  background-image: url("DATALAB/photo5.png");
+
+.trash-trash4 {
+  width: 231px;
+  height: 231px;
+  background-position: -5px -728px;
 }
-.trash6 {
-  background-image: url("DATALAB/photo6.png");
+
+.trash-trash5 {
+  width: 231px;
+  height: 230px;
+  background-position: -5px -969px;
+}
+
+.trash-trash6 {
+  width: 230px;
+  height: 231px;
+  background-position: -5px -1209px;
 }
 
 .photos {
@@ -406,7 +490,14 @@ header {
   font-weight: normal;
 }
 
-li {
+.product-detail {
+  font-family: "GmarketSansLight";
+  color: white;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.trash-photo > li {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -414,11 +505,11 @@ li {
   margin-left: 20px;
 }
 
-li:first-child {
+.trash-photo > li:first-child {
   margin-left: 0;
 }
 
-li:nth-child(4) {
+.trash-photo > li:nth-child(4) {
   margin-left: 0;
 }
 
@@ -428,4 +519,251 @@ li:nth-child(4) {
   display: block;
   width: 90%;
   border: 1px solid #75d3b6;
+}
+
+footer {
+  background-color: white;
+  font-family: "Daehan";
+  height: 91px;
+  text-align: center;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.copyright {
+  font-family: "Daehan";
+  margin-top: 0.6rem;
+}
+
+.sns {
+  margin-bottom: 11px;
+  margin-top: 6px;
+}
+
+.sns-icon {
+  font-size: 2rem;
+  color: #75d3b6;
+  margin-right: 1rem;
+}
+
+.sns-icon:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    position: relative;
+    height: 60px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 12px;
+    left: 5vw;
+    background: url("DATALAB/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 150px;
+  }
+
+  .sentence {
+    margin-top: 80px;
+    font-family: "Daehan";
+    font-size: 1.05rem;
+    margin-bottom: 80px;
+    text-align: center;
+    word-break: keep-all;
+    white-space: pre-line;
+    line-height: 2rem;
+    min-width: 0;
+  }
+
+  .sentence:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sentence:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 10rem;
+    border-top: 2px solid #63b79f;
+    margin-bottom: 1.5rem;
+  }
+
+  .first {
+    flex-direction: column;
+  }
+
+  .fairy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .fairy-image {
+    margin-bottom: 3rem;
+  }
+
+  .fairy-text {
+    width: 220px;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .photos {
+    background: url("DATALAB/four2.png");
+    background-color: rgb(198, 219, 210);
+    background-size: auto 800px;
+    background-repeat: no-repeat;
+    background-position-y: 80px;
+    background-position-x: center;
+  }
+
+  .trash-photo {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .trash-photo > li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 120px;
+  }
+
+  .trash:hover > .blind {
+    position: relative;
+    top: 235px;
+    width: inherit;
+    height: inherit;
+    z-index: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+
+  .trash {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-position-x: center;
+  }
+
+  .product-text {
+    width: inherit;
+    color: #5ea890;
+  }
+
+  .product-detail {
+    color: black;
+  }
+
+  .trash > .blind {
+    position: relative;
+    top: 235px;
+    width: inherit;
+    height: inherit;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: transparent;
+  }
+
+  .help-button {
+    width: 340px;
+    height: 60px;
+    border: none;
+  }
+
+  .side-image1 {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    right: 8vw;
+    top: 5rem;
+  }
+
+  .side-image2 {
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    left: 7vw;
+    bottom: 2rem;
+  }
+
+  .eco-kit {
+    font-size: 1rem;
+    width: 350px;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .logo2 {
+    height: 100px;
+    width: 300px;
+  }
+
+  #stb_subscribe > form {
+    margin-top: 150px;
+  }
+
+  .stb_form_title {
+    width: 150px;
+    word-break: keep-all;
+  }
+
+  .second-title {
+    height: 100px;
+    width: 368px;
+  }
+
+  .charts {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+  }
+
+  .introduce {
+    height: 1500px;
+    background-image: linear-gradient(
+      rgb(198, 219, 210) 10%,
+      #75d3b6 15% 85%,
+      rgb(198, 219, 210) 95%
+    );
+  }
+
+  .chart {
+    margin-bottom: 100px;
+  }
+
+  footer {
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  .side-image {
+    height: 130px;
+    width: 130px;
+  }
 }
