@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <title>껍데기데이터랩!</title>
+    <meta property="og:title" content="껍데기데이터랩!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raone-rn.github.io/" />
+    <meta
+      property="og:description"
+      content="재포장 쓰레기 데이터를 조사하고 변화를 위해 활동하는 껍데기데이터랩입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://raone-rn.github.io/DATALAB/og-image.png"
+    />
+    <meta
+      name="description"
+      content="포장 쓰레기 데이터를 조사하고 변화를 위해 활동하는 껍데기데이터랩입니다."
+    />
+    <meta
+      name="keywords"
+      content="자원순환, 홍수열, 재포장, 재포장 쓰레기, 대구환경운동연합, 제로웨이스트"
+    />
     <link rel="icon" type="image/png" sizes="32x32" href="DATALAB/icon.png" />
     <link rel="stylesheet" href="dataLab.css" />
     <link
@@ -27,7 +46,8 @@
     <section>
       <article class="story">
         <div class="sentence">
-          인간세계의 쓰레기 관리를 소홀히 한 죄로<br />저주를 받아 쓰레기가 되어버린 쓰레기 요정들은 <br />저주를 풀기 위해 쓰레기가 어디서 오는지
+          인간세계의 쓰레기 관리를 소홀히 한 죄로<br />저주를 받아 쓰레기가
+          되어버린 쓰레기 요정들은 <br />저주를 풀기 위해 쓰레기가 어디서 오는지
           조사해보기로 했어요.
         </div>
         <div class="first">
@@ -102,7 +122,9 @@
             <div class="trash trash-trash5">
               <div class="blind">
                 <div class="product-text">젤리류 재포장</div>
-                <div class="product-detail">: 설명을 입력해 주세요</div>
+                <div class="product-detail">
+                  : 원하는 수량만큼 살 수 없는 세트포장
+                </div>
               </div>
             </div>
           </li>
@@ -110,7 +132,9 @@
             <div class="trash trash-trash6">
               <div class="blind">
                 <div class="product-text">우유류 재포장</div>
-                <div class="product-detail">: 설명을 입력해 주세요</div>
+                <div class="product-detail">
+                  : 원하는 수량만큼 살 수 없는 세트포장
+                </div>
               </div>
             </div>
           </li>
@@ -119,7 +143,11 @@
       </article>
       <article class="button">
         <div class="side-image1"></div>
-        <a class="help-button" href="">
+        <a
+          class="help-button"
+          href="https://forms.gle/FMMnaj8oua8qWyubA"
+          target="blank"
+        >
           <div class="blind">
             쓰레기 유령들을 도와주자! 설문조사 하러 가기 GOGO!
           </div>
@@ -130,21 +158,45 @@
         </div>
         <div class="side-image2"></div>
       </article>
+
       <article class="form">
         <div class="logo2"></div>
         <div id="stb_subscribe">
           <form
-            action="https://stibee.com/api/v1.0/lists/17XFSKlK27tC16mslnG62UqC0MaO/public/subscribers"
+            action="https://stibee.com/api/v1.0/lists/scvWkjZoTHMePFK32ChwIvhhSHHQ/public/subscribers"
             method="POST"
             target="_blank"
             accept-charset="utf-8"
-            class="stb_form stb-form"
+            class="stb_form"
             name="stb_subscribe_form"
             id="stb_subscribe_form"
             novalidate=""
           >
             <h1 class="stb_form_title">껍데기데이터랩 구독하기</h1>
-
+            <fieldset class="stb_form_set">
+              <label for="stb_name" class="stb_form_set_label">이름</label>
+              <input
+                type="text"
+                class="stb_form_set_input"
+                id="stb_name"
+                name="name"
+                placeholder="이름이나 별명을 입력해주세요."
+              />
+              <div class="stb_form_msg_error" id="stb_name_error"></div>
+            </fieldset>
+            <fieldset class="stb_form_set">
+              <label for="stb_phonenumber" class="stb_form_set_label"
+                >전화번호</label
+              >
+              <input
+                type="text"
+                class="stb_form_set_input"
+                id="stb_phonenumber"
+                name="phonenumber"
+                placeholder="응원문자를 보내드려요!"
+              />
+              <div class="stb_form_msg_error" id="stb_phonenumber_error"></div>
+            </fieldset>
             <fieldset class="stb_form_set">
               <label for="stb_email" class="stb_form_set_label"
                 >이메일 주소</label
@@ -154,22 +206,10 @@
                 class="stb_form_set_input"
                 id="stb_email"
                 name="email"
+                placeholder="뉴스레터를 보내드려요!"
               />
-
               <div class="stb_form_msg_error" id="stb_email_error"></div>
             </fieldset>
-            <fieldset class="stb_form_set">
-              <label for="stb_name" class="stb_form_set_label">이름</label>
-
-              <input
-                type="text"
-                class="stb_form_set_input"
-                id="stb_name"
-                name="name"
-              />
-              <div class="stb_form_msg_error" id="stb_name_error"></div>
-            </fieldset>
-
             <div class="stb_form_policy">
               <label>
                 <input
@@ -178,35 +218,14 @@
                   value="stb_policy_true"
                 />
                 <a
-                  href="http://ecoseoul.or.kr/%ea%b0%9c%ec%9d%b8%ec%a0%95%eb%b3%b4%eb%b3%b4%ed%98%b8%ec%a0%95%ec%b1%85"
-                  target="_blank"
+                  href="https://docs.google.com/document/d/1WwQ4-a5qKJbMjvmP3ELfD95YsHtWeaOJmSS8gnYQDJo/edit"
+                  target="blank"
                 >
                   개인정보 수집 및 이용</a
                 >에 동의합니다.
               </label>
               <div class="stb_form_msg_error" id="stb_policy_error"></div>
-              <div
-                class="stb_form_modal stb_form_policy_text blind"
-                id="stb_form_modal"
-              >
-                <div class="stb_form_modal_body">
-                  <h1 class="stb_form_modal_title">개인정보 수집 및 이용</h1>
-                  <p class="stb_form_modal_text">
-                    뉴스레터 발송을 위한 최소한의 개인정보를 수집하고
-                    이용합니다. 수집된 정보는 발송 외 다른 목적으로 이용되지
-                    않으며, 서비스가 종료되거나 구독을 해지할 경우 즉시
-                    파기됩니다.
-                  </p>
-                  <div class="stb_form_modal_btn">
-                    <button id="stb_form_modal_close" type="button">
-                      닫기
-                    </button>
-                  </div>
-                </div>
-                <div class="stb_form_modal_bg" id="stb_form_modal_bg"></div>
-              </div>
             </div>
-
             <div class="stb_form_result" id="stb_form_result"></div>
             <fieldset class="stb_form_set_submit">
               <button
@@ -218,14 +237,15 @@
                   color: rgb(255, 255, 255);
                 "
               >
-                구독하기
+                쓰레기요정 돕기
               </button>
             </fieldset>
           </form>
         </div>
         <script
-          type="text/javascript"
-          src="https://s3.ap-northeast-2.amazonaws.com/resource.stibee.com/subscribe/stb_subscribe_form.js"
+          src="https://www.google.com/recaptcha/api.js"
+          async=""
+          defer=""
         ></script>
       </article>
 
@@ -271,7 +291,7 @@
           target="blank"
           ><i class="fab fa-youtube sns-icon"></i></a
         ><a class="sns-icon" href="http://dg.kfem.or.kr" target="blank"
-          ><i class="fab fa-internet-explorer"></i></i
+          ><i class="fab fa-internet-explorer"></i
         ></a>
       </div>
     </footer>

@@ -127,27 +127,27 @@ header {
 }
 
 .fairy-fairy1 {
-  width: 211px;
-  height: 185px;
+  width: 212px;
+  height: 186px;
   background-position: -5px -5px;
 }
 
 .fairy-fairy2 {
-  width: 211px;
-  height: 185px;
-  background-position: -5px -200px;
+  width: 191px;
+  height: 190px;
+  background-position: -5px -201px;
 }
 
 .fairy-fairy3 {
-  width: 211px;
-  height: 189px;
-  background-position: -5px -395px;
+  width: 212px;
+  height: 186px;
+  background-position: -5px -401px;
 }
 
 .fairy-fairy4 {
-  width: 211px;
+  width: 212px;
   height: 186px;
-  background-position: -5px -594px;
+  background-position: -5px -597px;
 }
 
 .fairy-text {
@@ -302,7 +302,6 @@ header {
 
 .form > #stb_subscribe {
   background-color: rgb(198, 219, 210);
-  height: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -326,6 +325,10 @@ header {
   height: 200px;
   width: 400px;
   z-index: 4;
+}
+
+#stb_subscribe .policy {
+  padding-top: 10px;
 }
 
 .stb_form_title {
@@ -393,7 +396,7 @@ header {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 820px;
+  width: 870px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 200px;
@@ -426,39 +429,39 @@ header {
 }
 
 .trash-trash1 {
-  width: 231px;
-  height: 231px;
+  width: 250px;
+  height: 250px;
   background-position: -5px -5px;
 }
 
 .trash-trash2 {
-  width: 231px;
-  height: 231px;
-  background-position: -5px -246px;
+  width: 250px;
+  height: 250px;
+  background-position: -5px -265px;
 }
 
 .trash-trash3 {
-  width: 231px;
-  height: 231px;
-  background-position: -5px -487px;
+  width: 250px;
+  height: 250px;
+  background-position: -5px -525px;
 }
 
 .trash-trash4 {
-  width: 231px;
-  height: 231px;
-  background-position: -5px -728px;
+  width: 250px;
+  height: 250px;
+  background-position: -5px -785px;
 }
 
 .trash-trash5 {
-  width: 231px;
-  height: 230px;
-  background-position: -5px -969px;
+  width: 250px;
+  height: 250px;
+  background-position: -5px -1045px;
 }
 
 .trash-trash6 {
-  width: 230px;
-  height: 231px;
-  background-position: -5px -1209px;
+  width: 250px;
+  height: 250px;
+  background-position: -5px -1305px;
 }
 
 .photos {
@@ -634,6 +637,7 @@ footer {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    min-width: 0;
   }
 
   .trash-photo > li {
@@ -647,7 +651,7 @@ footer {
 
   .trash:hover > .blind {
     position: relative;
-    top: 235px;
+    top: 248px;
     width: inherit;
     height: inherit;
     z-index: 0;
@@ -677,7 +681,7 @@ footer {
 
   .trash > .blind {
     position: relative;
-    top: 235px;
+    top: 248px;
     width: inherit;
     height: inherit;
     z-index: 1;
