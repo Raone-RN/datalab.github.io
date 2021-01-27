@@ -24,7 +24,7 @@ function randomSquare() {
 
 let i = 0;
 while (i < square.length) {
-  square[i].addEventListener("click", function (event) {
+  square[i].addEventListener("touchstart", function (event) {
     if (event.currentTarget.id === hitPos) {
       result = result + 1;
       score.textContent = result;
