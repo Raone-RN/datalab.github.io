@@ -3,6 +3,8 @@ const mole = document.querySelectorAll(".mole");
 const timeLeft = document.querySelector("#time-left");
 const score = document.querySelector("#score");
 
+const SPEED = 900;
+
 let result = 0;
 let hitPos = "1";
 let currentTime = timeLeft.textContent;
@@ -43,4 +45,4 @@ function countDown() {
 }
 
 let countDownTimerId = setInterval(countDown, 1000);
-let moveTimerId = setInterval(randomSquare, 550);
+let moveTimerId = setInterval(randomSquare, SPEED);
