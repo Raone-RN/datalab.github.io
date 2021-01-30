@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  /* /* box-sizing: border-box; */
+  font-family: "SDSamliphopangche_Outline";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(203, 252, 252);
+  height: 100vh;
+}
+
+.grid {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  background-color: white;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.score {
+  margin-bottom: 0.5rem;
+  color: rgb(104, 96, 96);
+}
+
+.snake {
+  background-color: rgb(16, 189, 212);
+}
+
+.apple {
+  background-color: salmon;
+}
+
+.start {
+  border: 1px skyblue solid;
+  color: skyblue;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  outline: 0;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.start:hover {
+  background-color: skyblue;
+  color: white;
+}
