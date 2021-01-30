@@ -7,8 +7,8 @@
 * {
   padding: 0;
   margin: 0;
-  /* /* box-sizing: border-box; */
   font-family: "SDSamliphopangche_Outline";
+  font-size : 1.5rem;
 }
 
 main {
@@ -20,8 +20,8 @@ main {
 }
 
 .grid {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
   border: none;
@@ -29,8 +29,8 @@ main {
 }
 
 .grid div {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .score {
@@ -50,8 +50,8 @@ main {
   border: 1px skyblue solid;
   color: skyblue;
   background-color: white;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 10px;
   outline: 0;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
