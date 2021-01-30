@@ -37,6 +37,7 @@ h2 {
   border: none;
   background-image: url(./square.png);
   background-size: cover;
+  cursor : pointer;
 }
 
 .grid {
